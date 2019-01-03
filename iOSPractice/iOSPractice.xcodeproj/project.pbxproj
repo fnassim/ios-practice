@@ -14,6 +14,7 @@
 		BBB2859321DC7A1B00613CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB2859121DC7A1B00613CBD /* LaunchScreen.storyboard */; };
 		BBEE760121DC9B6A00C85EB1 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEE760021DC9B6A00C85EB1 /* ImageData.swift */; };
 		BBEE760321DCA99000C85EB1 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEE760221DCA99000C85EB1 /* Image.swift */; };
+		BBEE760521DCB9DC00C85EB1 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEE760421DCB9DC00C85EB1 /* ImageTableViewCell.swift */; };
 		D16D3626A14DF4059F3838A5 /* Pods_iOSPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4C1D92F878F1E26A730313 /* Pods_iOSPractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		BBB285A421DC7A1B00613CBD /* iOSPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBEE760021DC9B6A00C85EB1 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		BBEE760221DCA99000C85EB1 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		BBEE760421DCB9DC00C85EB1 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				BBB2858F21DC7A1B00613CBD /* Assets.xcassets */,
 				BBB2859121DC7A1B00613CBD /* LaunchScreen.storyboard */,
 				BBB2859421DC7A1B00613CBD /* Info.plist */,
+				BBEE760421DCB9DC00C85EB1 /* ImageTableViewCell.swift */,
 			);
 			path = iOSPractice;
 			sourceTree = "<group>";
@@ -276,6 +279,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSPractice/Pods-iOSPractice-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -283,6 +290,10 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +332,7 @@
 			files = (
 				BBB2858B21DC7A1A00613CBD /* ViewController.swift in Sources */,
 				BBEE760321DCA99000C85EB1 /* Image.swift in Sources */,
+				BBEE760521DCB9DC00C85EB1 /* ImageTableViewCell.swift in Sources */,
 				BBB2858921DC7A1A00613CBD /* AppDelegate.swift in Sources */,
 				BBEE760121DC9B6A00C85EB1 /* ImageData.swift in Sources */,
 			);

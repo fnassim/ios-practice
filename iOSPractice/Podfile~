@@ -5,4 +5,5 @@ target 'iOSPractice' do
   # Comment the next line if you're not using Swift and don't want to use dynam
 use_frameworks!
 pod 'Alamofire', '~> 4.8'
+pod 'SwiftyJSON'
 end

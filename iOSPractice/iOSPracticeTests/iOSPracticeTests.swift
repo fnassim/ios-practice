@@ -2,13 +2,14 @@
 //  iOSPracticeTests.swift
 //  iOSPracticeTests
 //
-//  Created by Fadel Nassim on 2/1/19.
+//  Created by Fadel Nassim on 4/1/19.
 //  Copyright © 2019 Fadel Nassim. All rights reserved.
 //
 
 import XCTest
-@testable import iOSPractice
+import EarlGrey
 
+@testable import iOSPractice
 class iOSPracticeTests: XCTestCase {
 
     override func setUp() {
@@ -19,10 +20,17 @@ class iOSPracticeTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+        func testExample() {
+         //   app.window?.rootViewController = ViewController()
+            EarlGrey.selectElement(with:grey_accessibilityID("searchMe")).perform(grey_typeText("dogs\n"))
+                sleep(10)
+            EarlGrey.selectElement(with: grey_kindOfClass(ImageTableViewCell.self)).atIndex(0).perform(grey_tap())
+            
+            
+           // EarlGrey.selectElement(with:grey_accessibilityID("searchMe")).perform(grey_tap())
+            // Use recording to get started writing UI tests.
+            // Use XCTAssert and related functions to verify your tests produce the correct results.
+        }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

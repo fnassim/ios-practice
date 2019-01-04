@@ -27,7 +27,6 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        searchview.accessibilityIdentifier = "searchMe"
         super.viewDidLoad()
         searchview.delegate = self
         tv.dataSource = self

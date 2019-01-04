@@ -4,14 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>iOSPractice.xcscheme</key>
+		<key>iOSPractice.xcscheme_^#shared#^_</key>
 		<dict>
-			<key>isShown</key>
-			<true/>
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
-		<key>iOSPracticeUITests.xcscheme_^#shared#^_</key>
+		<key>iOSPracticeTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
@@ -19,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>BB608C5C21DF443A007854B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BBB2858421DC7A1900613CBD</key>
 		<dict>
 			<key>primary</key>
@@ -30,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>BBB285A321DC7A1B00613CBD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BBEE760B21DF0B3200C85EB1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

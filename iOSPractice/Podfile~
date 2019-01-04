@@ -3,7 +3,6 @@
 
 PROJECT_NAME = 'iOSPractice'
 TEST_TARGET = 'iOSPracticeUITests'
-SCHEME_FILE = 'iOSPractice.xcscheme'
 
 target PROJECT_NAME do
   # Comment the next line if you're not using Swift and don't want to use dynam
@@ -17,9 +16,4 @@ target TEST_TARGET do
   pod 'EarlGrey'
 end
 
-end
-
-post_install do |installer|
-  require 'earlgrey'
-  configure_for_earlgrey(installer, PROJECT_NAME, TEST_TARGET, SCHEME_FILE)
 end

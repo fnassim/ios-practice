@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-import SwiftyJSON
 
 class ViewController: UIViewController {
    
@@ -46,6 +45,12 @@ UISearchBarDelegate {
         print("EDITING !!!!")
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+       performSegue(withIdentifier: "showDetails", sender: self)
+       print(img.images[indexPath.row].url!)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let url = img.images[indexPath.row].url
         let cell = tableView.dequeueReusableCell(withIdentifier: "imageItemCell") as! ImageTableViewCell
@@ -55,5 +60,11 @@ UISearchBarDelegate {
     
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return img.images.count
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ViewController2 {
+            destination.img = img.images[(tv.indexPathForSelectedRow?.row)!]
+        }
     }
 }

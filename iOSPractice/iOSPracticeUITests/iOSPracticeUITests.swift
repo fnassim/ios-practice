@@ -2,7 +2,7 @@
 //  iOSPracticeUITests.swift
 //  iOSPracticeUITests
 //
-//  Created by Fadel Nassim on 2/1/19.
+//  Created by Fadel Nassim on 4/1/19.
 //  Copyright © 2019 Fadel Nassim. All rights reserved.
 //
 
@@ -27,6 +27,7 @@ class iOSPracticeUITests: XCTestCase {
     }
 
     func testExample() {
+        print ("OK")
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

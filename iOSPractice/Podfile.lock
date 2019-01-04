@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.0)
+  - EarlGrey (1.15.0)
   - FLAnimatedImage (1.0.12)
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
@@ -20,30 +21,29 @@ PODS:
   - PINRemoteImage/PINCache (3.0.0-beta.13):
     - PINCache (= 3.0.1-beta.6)
     - PINRemoteImage/Core
-  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8)
+  - EarlGrey
   - PINRemoteImage (= 3.0.0-beta.13)
-  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - EarlGrey
     - FLAnimatedImage
     - PINCache
     - PINOperation
     - PINRemoteImage
-    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  EarlGrey: 289a16cc7d08a54b962d72881b21e36d5103b549
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 830a67abb13bd4e661ecdf9f435153f0ead118a5
+PODFILE CHECKSUM: 6b33b20e1a02496e2774fe0789ccac0cf6ce4398
 
 COCOAPODS: 1.5.3

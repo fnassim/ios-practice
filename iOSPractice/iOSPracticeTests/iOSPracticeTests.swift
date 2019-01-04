@@ -22,10 +22,14 @@ class iOSPracticeTests: XCTestCase {
 
         func testExample() {
             EarlGrey.selectElement(with:grey_accessibilityID("searchMe")).perform(grey_typeText("dogs\n"))
-                sleep(5)
+            sleep(1)
             EarlGrey.selectElement(with: grey_kindOfClass(ImageTableViewCell.self)).atIndex(0).perform(grey_tap())
             EarlGrey.selectElement(with: grey_buttonTitle("Back")).perform(grey_tap())
-            sleep(5)
+            EarlGrey.selectElement(with:grey_accessibilityID("searchMe")).perform(grey_clearText())
+            EarlGrey.selectElement(with:grey_accessibilityID("searchMe")).perform(grey_typeText("beach\n"))
+            sleep(1)
+            EarlGrey.selectElement(with: grey_kindOfClass(ImageTableViewCell.self)).atIndex(0).perform(grey_tap())
+            EarlGrey.selectElement(with: grey_buttonTitle("Back")).perform(grey_tap())
         }
 
     func testPerformanceExample() {

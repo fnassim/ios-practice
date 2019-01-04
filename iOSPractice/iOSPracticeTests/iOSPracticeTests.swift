@@ -21,15 +21,11 @@ class iOSPracticeTests: XCTestCase {
     }
 
         func testExample() {
-         //   app.window?.rootViewController = ViewController()
             EarlGrey.selectElement(with:grey_accessibilityID("searchMe")).perform(grey_typeText("dogs\n"))
-                sleep(10)
+                sleep(5)
             EarlGrey.selectElement(with: grey_kindOfClass(ImageTableViewCell.self)).atIndex(0).perform(grey_tap())
-            
-            
-           // EarlGrey.selectElement(with:grey_accessibilityID("searchMe")).perform(grey_tap())
-            // Use recording to get started writing UI tests.
-            // Use XCTAssert and related functions to verify your tests produce the correct results.
+            EarlGrey.selectElement(with: grey_buttonTitle("Back")).perform(grey_tap())
+            sleep(5)
         }
 
     func testPerformanceExample() {
